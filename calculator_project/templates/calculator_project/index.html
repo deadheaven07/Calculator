@@ -1,0 +1,27 @@
+<!-- calculator_app/templates/calculator_app/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'calculator_app/style.css' %}">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')">+</button>
+            <!-- Add other buttons as needed -->
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="{% static 'calculator_app/script.js' %}"></script>
+</body>
+</html>
